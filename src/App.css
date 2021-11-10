@@ -1,38 +1,341 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .wrap {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.header
+{
+  background-color: rgb(54, 54, 54);
+  height: 824px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  margin-right: 33px;
+  margin-left: 22px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-item {
+  margin-left: 31px;
+}
+
+.navbar-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+.welcome {
+  max-width: 455px;
+  margin-top: 98px;
+}
+
+.welcome-header {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  color: #FFFFFF;
+}
+
+.welcome-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.welcome-link {
+  display: block;
+  width: 114px;
+  height: 31px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #52AADB;
+  padding-top: 6px;
+  margin-top: 20px;
+}
+
+.link-down{
+  margin-top: 270px;
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.courses {
+  margin-top: 88px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.courses-header {
+  text-align: center;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.courses-list{
+  margin-top: 88px;
   display: flex;
-  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.courses-item {
+  max-width: 516px;
+  min-height: 669px;
+  padding-top: 38px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  background-color: #F5F5F5;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px #C5C5C5;
+  border-radius: 15px;
+  margin-bottom: 67px;
+  transition: all 0.5s ease;
+}
+
+.courses-item:hover {
+  background-color: #EAEAEA;
+  box-shadow: none;
+}
+
+.courses-item:hover .courses-item-img {
+  filter: none;
+}
+
+.courses-item-header {
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.courses-item-text {
+  margin-top: 26px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.teachers {
+  margin-top: 161px;
+}
+
+.teachers-header {
+  text-align: center;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.teachers-list {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 53px;
+}
+
+.teachers-item {
+  width: 236px;
+  text-align: center;
+}
+
+.teachers-img {
+  transition: all 0.5s ease;
+}
+
+.teachers-img:hover {
+  box-shadow: -5px -5px 15px #FFFFFF, 5px 5px 15px rgba(135, 135, 135, 0.96);
+  transition: ease 0.5s;
+}
+
+.teachers-item-header {
+  margin-top: 30px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.teachers-item-text {
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.map, .contact {
+  margin-top: 110px;
+}
+
+.contact-header {
+  text-align: center;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  color: #000000;
+}
+
+.contact-link {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 57px;
+  width: 444px;
+  height: 86px;
+  background-color: #F1F1F1;
+  box-shadow: -6px -6px 10px #FFFFFF, 6px 6px 10px #CACACA;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  line-height: 72px;
+  color: #FFB800;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 147px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left{
+  max-width: 385px;
+}
+
+.footer-left-text-top {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.footer-left-text-bottom {
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #C7C7C7;
+}
+
+.footer-list{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer-item:first-child{
+  margin-right: 100px;
+}
+
+.footer-item-header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.footer-item-menu{
+  margin-top: 26px;
+}
+
+.footer-item-menu-item{
+  margin-top: 5px;
+}
+
+.footer-item-menu-link{
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+.footer-item-menu-item:hover .footer-item-menu-link{
+  color: #FFB800;
+}
+
+.logo-pic {
+  width: 114px;
+  height: 85px;
+}
+
+.down-arrow {
+  width: 52px;
+  height: 70px;
+}
+
+.courses-item-img {
+  width: 297px;
+  height: 297px;
+  filter: drop-shadow(5px 5px 15px #979797);
+}
+
+.teachers-img {
+  border-radius: 50%;
+  width: 236px;
+  height: 236px;
+}
+
+.contact-link-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 11px;
+}
+
+.footer-logo {
+  width: 162px;
+  height: 120px;
 }
